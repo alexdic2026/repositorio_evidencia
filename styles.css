@@ -1,0 +1,128 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+/* HEADER */
+header {
+    background: #0d1b2a;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TITULO */
+.logo h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #00b4d8, #90e0ef);
+
+    -webkit-background-clip: text; /* Chrome, Edge */
+    background-clip: text;         /* estándar */
+
+    -webkit-text-fill-color: transparent;
+}
+
+/* MENÚ */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}   
+
+.menu a:hover {
+    color: #00b4d8;
+}
+
+/* PORTADA */
+.portada {
+    position: relative;
+    background: url("imagen ..png") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+.portada::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+
+.contenido-portada {
+    position: relative;
+    z-index: 1;
+}
+
+.contenido-portada h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.contenido-portada p {
+    font-size: 20px;
+}
+
+
+.btn {
+    background: #00b4d8;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.contenido {
+    padding: 40px;
+}
+
+.info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.servicios {
+    padding: 40px;
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.contacto {
+    text-align: center;
+    padding: 40px;
+}
